@@ -5,10 +5,12 @@ import org.springframework.context.annotation.Bean;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.Contact;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class SpringDocConfig {
 
-    @Value("${app.url}") private String Url;
+    @Value("${app.url}") private String url;
     @Value("${app.dev-name}") private String devName;
     @Value ("${app.dev-email}") private String devEmail;
 
